@@ -22,4 +22,8 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
     Ok(views.html.index("Your new application is ready."))
   }
 
+  def disableUser(id: String) = Action {
+    Ok(s"disabled user $id")
+  }
+
 }
